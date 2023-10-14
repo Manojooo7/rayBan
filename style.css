@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    block-size: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    font-family: kajiro;
+    src: url(./KajiroBold.ttf);
+}
+
+.main{
+   width: 100%;
+   height: 100vh;
+   background-color: #000; 
+}
+
+.back{
+    width: 100%;
+    height: 100vh; 
+}
+
+.top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000; 
+}
+.workingArea{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1    920px;
+    height: 100vh;
+    /* background-color: #888; */
+    border: 1px solid red;
+}
+.nav{
+    /* background-color: aqua; */
+    width: 100%;
+    padding: 40px 0px;
+    /* margin-bottom: 20vh; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.navleft, .navright{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navleft> img{
+    height: 60px;
+}
+
+
+/* hero section */
+
+.hero{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+    width: 100%;
+    justify-content: space-between;
+    /* height: 100px; */
+    /* background-color: red; */
+}
+
+.heroleft{
+    min-width: 50%;
+    /* height: 100px; */
+    /* background-color: yellow; */
+}
+
+.heroleft .elem{
+    height: 6.5vw;
+    /* background-color: red; */
+    overflow: hidden;
+}
+.heroleft .elem h1{
+    line-height: .9;
+    font-family: "kajiro";
+    color: #fff;
+    font-weight: 100;
+    font-size: 8vw;
+
+}
+
+.heroleft button{
+    padding: .8vw 2.5vw;
+    font-size: 3vw;
+    margin-top: 1vw;
+    font-family: "kajiro";
+}
+
+.heroright{
+    min-width: 25%;
+    /* height: 100px; */
+    background-color: green;
+}
